@@ -1,0 +1,41 @@
+---
+title: "NBR data analysis"
+---
+
+
+
+Let's first load the library
+
+```{r}
+library(tidyverse)
+```
+
+Then load the data 
+
+```{r}
+nbr1 <- readRDS("./data/nbr1.rds")
+nbr2 <- readRDS("./data/nbr2.rds")
+```
+
+Let's make the whole
+
+```{r}
+nbr <- rbind(nbr1,nbr2)
+rm(nbr1)
+rm(nbr2)
+```
+
+
+
+Let's check the dimensions
+
+```{r}
+dim(nbr)
+```
+
+Names of variables 
+
+```{r}
+names(nbr)
+```
+
